@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<ol type="1">
+<h1> <li>  Gdzie jest wstawiany wewnętrzny arkusz stylów? </h1>
+<p style="font-family:Arial"> Jest wstawiany w nagłówku dokumentu (pomiędzy znacznikami <&nbsp;head&nbsp;> i
+<&nbsp;/head&nbsp;>.
+<h1> <li> Składnia teoretyczna </h1>
+<style> td { border: 1px solid black; } </style>
+<table>
+<tr>
+<td>
+<textarea cols="100" rows="11">
+<head>
+(...)
+ <style type="text/css">
+ /* <![CDATA[ */
+ selektor1 { cecha: wartość; cecha2: wartość2... }
+ selektor2 { cecha: wartość; cecha2: wartość2... }
+ (...)
+ /* ]]> */
+ </style>
+</head>
+</td>
+</tr>
+</textarea>
+</table> 
+<h1> <li> Co może być selektorem? </h1>
+Selektorem może być praktycznie dowolny znacznik, np. body, p, h1 i wiele innych.
+
+<h1> <li>  Co może być cechą a co wartością? </h1>
+Cechą są konkretne atrybuty formatowania, a wartością dokładne wartości danego atrybutu.
+</li>
+</p>
+</body>
+</html>
